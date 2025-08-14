@@ -7,7 +7,7 @@ import re
 import tempfile
 import os
 from datetime import datetime
-#from gtts import gTTS
+from gtts import gTTS
 
 # ------------- CONFIG -------------
 BACKEND = "http://localhost:8000"
@@ -312,4 +312,5 @@ else:
             add_message("assistant", f"⚠️ خطأ: {answer}", st.session_state.current_mode)
         # rerun to show latest
         st.rerun()
+
 
